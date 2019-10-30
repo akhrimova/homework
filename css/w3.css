@@ -1,0 +1,22 @@
+.bg {
+		background-image: url(./im.jpg); 
+		background-attachment: fixed; 
+		background-repeat: repeat-x; 
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding-left:0;
+}
+a {
+    text-decoration:none;
+}
+li {
+    float:left;
+    margin-right:10px;
+}
+.span { 
+display: block; 
+}
+
