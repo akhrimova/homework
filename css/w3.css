@@ -1,7 +1,9 @@
-.bg {
-		background-image: url(./im.jpg); 
+body {
+		background-image: url(./../im.jpg); 
 		background-attachment: fixed; 
-		background-repeat: repeat-x; 
+		background-repeat: repeat-x;
+        
+            
 }
 
 ul {
