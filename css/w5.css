@@ -6,7 +6,8 @@ body {
 header {
   background: #0a2234;
   text-align: center;
-}
+  height:100px;
+  }
 header a {
   display: block;
   text-decoration: none;
@@ -14,11 +15,20 @@ header a {
   transition: .3s ease-in-out;
 }
 .logo {
-  color: #7d9ab9;
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 2.5em;
-  padding: 20px 0;
+    height: 110px;
+    width: 110px;
+    padding: 0;
+    margin:0;
 }
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 nav {
   display: table;
   margin: 0 auto;
@@ -32,7 +42,7 @@ nav ul {
   content: "";
   display: table;
   clear: both;
-}
+  }
 .topmenu > li {
   width: 25%;
   float: left;
@@ -41,10 +51,10 @@ nav ul {
 }
 .topmenu > li > a {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
     font-weight: bold;
     color:#A7C6E4 ;
-    padding: 15px 30px;
+    padding: 41px 40px;
 }
 .topmenu li a:hover {color: #ede4d9;}
 .submenu-link:after {
@@ -56,7 +66,7 @@ nav ul {
   margin-left: 20px;
 }
 .submenu {
-  background: #3c5572;
+    background: #3c5572;
     position: absolute;
     left: 0;
     top: 100%;
@@ -68,7 +78,7 @@ nav ul {
     transition: .5s ease-in-out;
 }
 .submenu a {
-  color: #93918e;
+    color: #93918e;
     text-align: left;
     padding: 12px 15px;
     font-size: 15px;
@@ -79,4 +89,154 @@ nav ul {
   opacity: 1;
     transform: scaleY(1);
 }
+.sidebar, .content, footer {
+    box-sizing: border-box; /* padding не влияет на ширину */
+    padding: 10px; /* Поля вокруг текста */
+   
+   }
+.row {
+    overflow: hidden; /* Отменяем обтекание */
+   }
+.sidebar, .content { min-height: 350px; }
+.sidebar {
+    float: right; /* Формируем колонки */
+    width: 200px; /* Ширина колонки */
+    background: #93918e; /* Цвет фона */
+   }
+.content {
+     font-family: 'Sylfae', serif;
+    margin-right: 110px; /* Отступ слева */
+    background: #fff; /* Цвет фона */ 
+    margin-top: 0px;
+    /*text-align: center;*/
+   }
 
+footer {
+        text-align: center;
+    left:0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #3c5572; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    height: 70px;
+   }
+   
+
+.media{
+ 
+  margin-left:666px;
+   
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float:left;
+    
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+
+}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+
+img {
+    width:250px;
+    height:250px;
+    float:left;
+    padding:20px;
+}
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: #3c5572;
+  text-align: center;
+}
+.post-detail, .post {
+  font-family: 'Arimo', sans-serif;
+}
+.post-detail {
+  width: 30%;
+  margin: 0 auto 10px;
+  text-align: center;
+  }
+.post-info {
+  color: #be9656;
+  font-style: 'Arimo', sans-serif;
+  position: relative;
+  display: block;
+  font-size: 13px;
+}
+.post-info:before {
+  content: "";
+  border-bottom: 1px solid #be9656;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+.post-info span {
+  display: inline-block;
+  padding: 0 1.2em;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444444;
+}
+
+a.glo{
+
+ color:#3c5572;
+ padding: 10px 20px;
+ width:200px;
+ text-decoration:none;
+ text-align:center;
+ margin:20px auto;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#3c5572 50%,#3c5572);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 18px 'Playfair Display SC', serif;
+ border: 1px solid #3c5572;
+}
+a.glo:hover {
+background-position: 0 0;
+color:#fff;
+}
+
+#submit {
+    color:#3c5572;
+ padding: 10px 20px;
+ width:200px;
+ text-decoration:none;
+ text-align:center;
+ margin:20px auto;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#3c5572 50%,#3c5572);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 18px 'Playfair Display SC', serif;
+ border: 1px solid #3c5572;
+}
+#submit:hover {
+background-position: 0 0;
+color:#fff;
+}
